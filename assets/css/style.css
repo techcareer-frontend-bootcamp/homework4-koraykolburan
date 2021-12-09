@@ -1,0 +1,346 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+body {
+    font-family: 'Lucida Grande', tahoma, verdana, arial, sans-serif;
+    background-color: #eef2f8 !important;
+}
+
+figcaption {
+    font-size: 30px !important;
+    word-spacing: -2px !important;
+    line-height: 1 !important;
+}
+
+p {
+    font-size: 12px !important;
+}
+
+p>a {
+    text-decoration: none !important;
+    color: black !important;
+    font-weight: bolder !important;
+}
+
+p>a:hover {
+    text-decoration: underline !important;
+}
+
+form {
+    font-size: 12px !important;
+}
+
+li {
+    list-style-type: none !important;
+    display: inline-block !important;
+    margin-right: 10px !important;
+}
+
+.password {
+    font-size: 16px !important;
+}
+
+#note {
+    text-decoration: none !important;
+    font-size: 14px !important;
+}
+
+li>a {
+    text-decoration: none !important;
+    color: rgb(109, 105, 105) !important;
+}
+
+ul>li {
+    font-size: 13px !important;
+}
+
+li:hover {
+    text-decoration: underline;
+}
+
+.newpage {
+    font-size: 15px !important;
+}
+
+.bi:hover {
+    color: black;
+}
+
+#login {
+    background-color: white!important;
+    border-radius: 2% !important;
+    margin-top: 105px !important;
+}
+
+.button2 {
+    background-color: #42b72a !important;
+    border-radius: 0.25rem;
+    color: white !important;
+    border: none !important;
+    font-size: 17px !important;
+    line-height: 48px !important;
+    padding: 0 16px !important;
+}
+
+.button2:hover {
+    background-color: #2a7c1a !important;
+}
+
+#logo {
+    margin-top: 170px !important;
+    width: 230px !important;
+    height: 110px !important;
+    justify-content: center !important;
+    padding: 0!important;
+}
+
+.logo {
+    margin-left: 22px !important;
+    margin-right: 75px !important;
+}
+
+.question {
+    text-decoration: none !important;
+}
+
+.question:hover {
+    text-decoration: underline !important;
+}
+
+.subtitle {
+    background: white;
+    margin: 0 !important;
+    padding: 0 120px !important;
+}
+
+.maincontent {
+    height: 576.5px !important;
+}
+
+#eng:hover {
+    cursor: text !important;
+    text-decoration: none !important;
+}
+
+
+/*---- Sign up ---- */
+
+.signup {
+    position: fixed !important;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    margin-top: 0 !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(250, 250, 250, 0.8);
+    display: none;
+}
+
+.signupform {
+    margin: auto;
+    width: 35%;
+    height: 82%;
+    padding: 20px;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-top: 60px;
+    position: relative;
+}
+
+.siginup-close {
+    position: absolute;
+    right: 18px;
+    top: 0;
+    cursor: pointer;
+    font-size: 36px;
+}
+
+.signup-heading {
+    width: 100% !important;
+    line-height: 17px !important;
+}
+
+.signup-heading .signup-name {
+    font-size: 30px !important;
+    font-weight: bold !important;
+}
+
+.signup-heading .signup-child-name {
+    font-size: 17px !important;
+}
+
+.main-name {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-name input[type=text] {
+    width: 48%;
+    padding: 6px;
+    font-size: 17px;
+    border: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #eee;
+}
+
+.main-email {
+    width: 100%;
+    margin-top: 7px;
+}
+
+.main-email input[type=email] {
+    width: 100%;
+    padding: 6px;
+    font-size: 17px;
+    border: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #eee;
+}
+
+.main-password {
+    width: 100%;
+    margin-top: 7px;
+}
+
+.main-password input[type=password] {
+    width: 100%;
+    padding: 6px;
+    font-size: 17px;
+    border: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #eee;
+}
+
+#day,
+#month {
+    width: 32%;
+    padding: 6px;
+    font-size: 17px;
+    border: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#year {
+    width: 34%;
+    padding: 6px;
+    padding-right: 0 !important;
+    margin-right: 0 !important;
+    font-size: 17px;
+    border: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.date-alert {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: rgb(119, 118, 118);
+    padding-bottom: 15px !important;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
+
+.gender-alert {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: rgb(119, 118, 118);
+    padding-bottom: 15px !important;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
+
+.gender-choice {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3px;
+}
+
+.gender-name {
+    width: 32%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+.signup-terms {
+    width: 100%;
+    margin-top: 7px;
+    font-size: 12px;
+}
+
+.signup-button {
+    width: 200px;
+    margin: auto;
+    margin-top: 7px;
+}
+
+.signup-button button {
+    width: 100%;
+    padding: 5px;
+    background-color: #42b72a;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.signup-button button:hover {
+    background: #2a7c1a;
+}
+
+
+/*---- Responsive ----*/
+
+@media only screen and (max-width: 768px) {
+    #logo {
+        margin-top: 10px !important;
+        margin-bottom: 0 !important;
+        margin-right: auto !important;
+        margin-left: auto !important;
+        padding-bottom: 0 !important;
+        text-align: center !important;
+        justify-content: center !important;
+    }
+    #login {
+        margin-top: 20px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        justify-content: center !important;
+        text-align: center !important;
+    }
+    figcaption {
+        margin-bottom: 15px !important;
+        font-size: 24px !important;
+        margin-right: 50px !important;
+        margin-left: 50px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .newpage1 {
+        padding-right: 65px !important;
+    }
+    figcaption {
+        font-size: 25px !important;
+    }
+}
