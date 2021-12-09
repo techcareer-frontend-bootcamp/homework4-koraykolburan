@@ -1,20 +1,196 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
- 
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
-    <title>Homework4 - Facebook Clone</title>
- 
-  </head>
-  <body>
-     <!-- Content -->
- 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Facebook</title>
+    <link rel="shortcut icon" href="./assets/icons/icons8-facebook.svg">
+</head>
 
-    <!-- Bootstrap Bundle with Popper --> 
-    <script src="assets/js/bootstrap.min.js"></script>
-  </body>
+<body>
+    <div class="container maincontent">
+
+        <div class="row">
+            <!-- LOGO -->
+            <div class="col-xl-6 col-lg-5 col-md-4 col-sm-11 col-11 text-md-start text-center logo">
+                <img src="./assets/icons/logo.svg" id="logo" alt="facebook-logo" class="mt-5 mt-sm-0">
+                <figcaption class="text-xl-start text-lg-start text-md-start text-center">
+                    Facebook helps you connect and share with the people in your life.
+                </figcaption>
+            </div>
+            <!-- FORM -->
+            <div class="col-xl-4 col-lg-5 col-md-6 col-sm-8 col-8 shadow-lg" id="login">
+                <form>
+                    <div class="mb-3 mt-3 input-group-lg">
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email adress or phone number" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3 input-group-lg">
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="d-grid gap-2 mb-3">
+                        <button type="submit" class="btn btn-primary fw-bolder btn-lg">Log In</button>
+                    </div>
+                    <a class="question" href="#">
+                        <p class="text-center password">Forgotten password?</p>
+                    </a>
+                    <hr>
+                    <div class="d-grid gap-2 col-8 mx-auto m-4">
+                        <button type="submit" class="btn button2 fw-normal btn-lg fw-bold" id="signup-account">Create New Account</button></div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6"></div>
+            <div class="col-md-6 fw-normal text-center mt-4 newpage1">
+                <a href="#">
+                    <p class="newpage">Create a page</a> for a celebrity, brand or business.</p>
+            </div>
+        </div>
+        <!-- SIGN UP PAGE -->
+        <div class="signup">
+            <div class="signupform">
+                <div class="siginup-close">x</div>
+                <div class="signup-heading">
+                    <p class="signup-name">Sign Up</p>
+                    <p class="signup-child-name">It's quick and easy.</p>
+                </div>
+                <hr>
+                <div class="main-name">
+                    <input type="text" placeholder="First name">
+                    <input type="text" placeholder="Surname">
+                </div>
+                <div class="main-email">
+                    <input type="email" placeholder="Mobile number or email address">
+                </div>
+                <div class="main-password">
+                    <input type="password" placeholder="New password">
+                </div>
+                <div class="date-birth mt-2">
+                    <label for="">Date of birth</label>
+                    <div class="date-alert">
+                        <a> &#63;</a>
+                    </div>
+                </div>
+                <div class="date-birth">
+                    <form>
+                        <span>
+                              <select name="day" id="day"></select>
+                        </span>
+                        <span>
+                              <select name="month" id="month"></select>
+                        </span>
+                        <span>
+                              <select name="year" id="year"></select>
+                        </span>
+                    </form>
+                </div>
+                <div class="gender mt-2">
+                    <label for="">Gender</label>
+                    <div class="gender-alert">
+                        <a> &#63;</a>
+                    </div>
+                </div>
+                <div class="gender-choice">
+                    <div class="gender-name">
+                        <label for="">Female</label>
+                        <input type="radio">
+                    </div>
+                    <div class="gender-name">
+                        <label for="">Male</label>
+                        <input type="radio">
+                    </div>
+                    <div class="gender-name">
+                        <label for="">Custom</label>
+                        <input type="radio">
+                    </div>
+                </div>
+                <div class="signup-terms text-muted">
+                    <p>By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="">Data Policy</a> and <a href="">Cookie Policy</a>. You may receive SMS notifications from us and can opt out at any time.</p>
+                </div>
+                <div class="signup-button">
+                    <button>Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SUB CONTENTS -->
+    <div class="row subtitle mt-5 pt-4">
+        <div class="row">
+            <ul>
+                <li><a href="#" id="eng">English (UK)</a></li>
+                <li><a href="#">Turkish</a></li>
+                <li><a href="#">Kurdi (Kurmancî)</a></li>
+                <li><a href="#">العربية</a></li>
+                <li><a href="#">Zaza</a></li>
+                <li><a href="#">Deutsch</a></li>
+                <li><a href="#">Русский</a></li>
+                <li><a href="#">Français (France)</a></li>
+                <li><a href="#">فارسی</a></li>
+                <li><a href="#">Español</a></li>
+                <li><a href="#">Português (Brasil)</a></li>
+                <li><a href="#"><i class="bi bi-plus-square was-validated"></i></a></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="row">
+            <ul>
+                <li><a href="#">Sign up</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Messenger</a></li>
+                <li><a href="#">Facebook Lite</a></li>
+                <li><a href="#">Watch</a></li>
+                <li><a href="#">Places</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Facebook Pay</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Oculus</a></li>
+                <li><a href="#">Portal</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Bulletin</a></li>
+                <li><a href="#">Local</a></li>
+                <li><a href="#">Fundraisers</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Voting Information Centre</a></li>
+                <li><a href="#">Groups</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Create ad</a></li>
+                <li><a href="#">Create Page</a></li>
+                <li><a href="#">Developers</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">AdChoices</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+            <p>Meta &copy; 2021</p>
+        </div>
+    </div>
+    <!-- This is for CREATE NEW ACCOUNT BUTTON -->
+    <script>
+        $(document).ready(function() {
+
+            $('#signup-account').click(function() {
+
+                $('.signup').show();
+
+            });
+
+            $('.siginup-close').click(function() {
+
+                $('.signup').hide();
+
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
 </html>
